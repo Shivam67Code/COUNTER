@@ -1,0 +1,91 @@
+
+/* General styling for the body */
+body {
+    display: flex;
+
+    /* Center the content */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #2c3e50;
+}
+
+/* Styling for the count label */
+#countLabel {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #ffffff;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#countLabel:hover {
+    transform: scale(1.05);
+}
+
+/* Container for buttons */
+#btnContainer {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Styling for buttons */
+button {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styles for different buttons */
+#decreaseBtn {
+    background: #e74c3c;
+}
+
+#decreaseBtn:hover {
+    background: #c0392b;
+}
+
+#resetBtn {
+    background: #95a5a6;
+}
+
+#resetBtn:hover {
+    background: #7f8c8d;
+}
+
+#increaseBtn {
+    background: #2ecc71;
+}
+
+#increaseBtn:hover {
+    background: #27ae60;
+}
+
